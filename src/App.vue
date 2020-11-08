@@ -96,7 +96,7 @@ export default {
   background-image: url(./assets/hot.jpg);
 }
 main{
-  height: 100vh;
+  min-height: 100vh;
   padding: 50px;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.75));
 }
@@ -105,6 +105,7 @@ main{
   justify-content: center;
   width: 100%;
 }
+
 .search-box{
   display: block;
   padding: 20px;
@@ -181,5 +182,13 @@ main{
   font-size: 20px;
   text-align: center;
   color: white;
+}
+@media only screen and (max-width: 480px) {
+  .search-box{
+    width: 100%;
+  }
+  .degree{
+    width: 100%;
+  }
 }
 </style>
